@@ -1,0 +1,21 @@
+.booking {
+  color: darkcyan;
+}
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list li {
+  margin: 0 10px;
+}
+.list li a:hover {
+  background-color: #ebedef;
+  color: red;
+}
+
+.bg-color:focus{
+  color: red;
+}

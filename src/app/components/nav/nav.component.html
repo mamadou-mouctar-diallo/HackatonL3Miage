@@ -1,0 +1,51 @@
+<nav class="navbar navbar-light bg-light static-top">
+  <div class="container">
+      <a class="navbar-brand shadow-none" href="#!"><h1>Hotel-<span class="booking">Booking</span></h1></a>
+      <ul class="list">
+        <li>
+            <button class="form-select shadow-none">
+                <span class="is-visually-hidden">Lang:en</span>
+                <span class="_3cL5Bp _2o5bWw"></span>
+            </button>
+        </li>
+        <li>
+            <div class="#">
+                <div role="button" tabindex="-1" class="LwYNXV">
+                    <button class="form-select shadow-none">
+                        <span>Help</span>
+                    </button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="#" class="btn btn-lg btn-light shadow-none" rel="nofollow" (click)="open(content)">
+                    <span>Sign in</span>
+            </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Sign in</h4>
+      <button type="button" class="btn-close shadow-none bg-color" aria-label="Close" (click)="modal.dismiss('Close click')"></button>
+    </div>
+    <div class="modal-body">
+      <form class="form-control form-register">
+            <div class="mb-3">
+            <input type="email" name="email" id="password" class="form-control shadow-none" placeholder="Email adress">
+            </div>
+            <div class="mb-3">
+                <input type="password" name="password" id="password" class="form-control shadow-none" placeholder="Password">
+            </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <div class="mb-3">
+        <button class="form-control btn btn-primary submit px-3 shadow-none" (click)="modal.close('Login click')">
+        LOGIN
+        </button>
+     </div>
+    </div>
+  </ng-template>
